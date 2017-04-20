@@ -2,7 +2,6 @@ from django.db import models
 from charcha.discussions.models import User
 from pywebpush import WebPusher
 import json
-from django.conf import settings
 
 GCM_KEY="AAAAg6WtQoE:APA91bH4OzX-QkBbnie4WCMDWmEMf0dIxXRr_TdRB-FWB5GxHgRve6lfBpWuUkuLg-GIJCAPIhkD9Zh6-zFgVPaGQARhn4HayPDGhx35T8s1AaGZXEv0BJVqQBPvp6WZ4Z3VUcOw21Bf"
 class Subscription(models.Model):

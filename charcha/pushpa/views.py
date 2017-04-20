@@ -1,10 +1,7 @@
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods
-from django.core.exceptions import ObjectDoesNotExist
 
-from charcha.discussions.models import User
 from .models import Subscription
 
 @login_required

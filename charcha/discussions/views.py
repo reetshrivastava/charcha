@@ -7,15 +7,11 @@ from django.contrib.auth import login
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.contenttypes.models import ContentType
 
-from django.db.models import F
-from django.forms.models import model_to_dict
 from django.urls import reverse
 from django.utils.decorators import method_decorator
 
-from .models import UPVOTE, DOWNVOTE, FLAG
-from .models import Post, Comment, Vote, User
+from .models import Post, Comment, User
 
 def homepage(request):
     user = None
